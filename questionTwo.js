@@ -58,6 +58,17 @@ const sum = (stringArrayArray) => {
 
 console.log(
 	"Net result of all numbers in array: ",
+	sum(["1", "five", "2wenty", "thr33"])
+);
+console.log(
+	"Net result of all numbers in array: ",
+	sum([
+		["1X2", "t3n"],
+		["1024", "5", "64"],
+	])
+);
+console.log(
+	"Net result of all numbers in array: ",
 	sum([
 		[
 			["0", "0x2", "z3r1"],

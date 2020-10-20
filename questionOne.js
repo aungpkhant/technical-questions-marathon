@@ -44,5 +44,13 @@ const stripUrlParams = (urlString, paramsToStrip = []) => {
 
 console.log(
 	"Result after strip: ",
+	stripUrlParams("https://google.com?a=1&b=2&a=2")
+);
+console.log(
+	"Result after strip: ",
+	stripUrlParams("https://google.com?a=1&b=2&a=2", ["b"])
+);
+console.log(
+	"Result after strip: ",
 	stripUrlParams("https://google.com", ["b"])
 );
